@@ -26,3 +26,10 @@ jobs:
     
     - name: Publish
       run: dotnet publish
+      
+    - name: Upload WebApp1 Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: WebApp1
+        path: C:\Users\jitse\source\repos\DevOpsTest\DevOpsTest\bin\Release\net5.0-windows\win-x64\publish
+  
