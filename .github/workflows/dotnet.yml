@@ -31,5 +31,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: WebApp1
-        path: DevOpsTest\DevOpsTest\bin\Release\net5.0-windows\win-x64\publish\
+        path: DevOpsTest\DevOpsTest\bin\Release\net5.0-windows\win-x64\publish\*.exe
   
