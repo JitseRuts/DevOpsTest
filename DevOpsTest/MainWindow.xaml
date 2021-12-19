@@ -1,0 +1,30 @@
+﻿<Window x:Class="DevOpsTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DevOpsTest"
+        mc:Ignorable="d"
+        Title="Quote List" Height="540" Width="780">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label>Quote List</Label>
+        <ListBox Grid.Row="1" x:Name="lstNames" SelectionChanged="lstNames_SelectionChanged" />
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5,0,0,0">
+            <TextBox x:Name="txtQuote" />
+            <Button x:Name="btnAdd" Margin="0,5,0,0" Click="ButtonAddQuote_Click">Insert Quote</Button>
+            <Button x:Name="btnDelete" Margin="0,5,0,0" Click="ButtonDeleteQuote_Click">Delete Quote</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
